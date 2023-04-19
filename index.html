@@ -14,16 +14,24 @@
 
 <body>
     <div class="banner-inicio">
-        <header class="encabezado-index">
-            <img class="logo" src="./recursos/Logo blanco.png" alt="Logo">
-            <nav>
-                <ul class="navegacion">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                    <li><a href="./pages/servicios.html">Servicios</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg deg-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img src="./recursos/Marca-de-agua-blanca.png"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="marcador-actual"><a class="enlace-pag pag-actual" aria-current="page" href="./index.html">Home</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-sobrenos" href="#">Sobre nosotros</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-proy" href="#">Proyectos</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-serv" href="#">Servicios</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-cont" href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main id="main-index">

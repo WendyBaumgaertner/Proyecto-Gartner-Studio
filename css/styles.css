@@ -25,85 +25,75 @@
 }
 
 
-/* ----------HEADER----------*/
-
-
-.encabezado-index {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.fondo {
-    background-color: #081413;
-    height: 850px;
-}
-
-.logo {
-    height: 70px;
-    margin: 15px;
-
-}
-
-.navegacion {
-    list-style: none;
-    color: #eaeaea;
-    display: flex;
-}
-
-.navegacion li {
-    margin: 0 10px;
-}
-
-.navegacion li a {
-    text-decoration: none;
-    color: #eaeaea;
-}
-
-/* ----------NUEVO HEADER----------*/
+/* ---------- HEADER----------*/
 
 .deg-navbar {
     background-image: linear-gradient(#030303c7, #08141300);
 }
 
 .navbar-brand img {
-    height: 50px;
+    height: 55px;
 }
 
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
 }
 
-.navbar-nav {
+.enlace-pag {
+    padding: 3px 5px;
+    text-decoration: none;
     color: #e9e9ea;
 }
 
-.nav-link {
-    color: #e9e9ea8e;
+.navbar {
+    min-height: 9vh;
 }
 
-.nav-item-active {
+.marcador-actual {
     background-color: #501c1a;
-    border-radius: 50px;
-    color: #e9e9ea;
+    padding: 3px 5px;
+    border-radius: 20px;
+}
+
+.pag-actual {
     font-family: ZonaPro-Bold;
 }
 
-.nav-link active {
-    color: #e9e9ea;
-    font-family: ZonaPro-Bold;
-} 
+.marcador {
+    padding: 3px 5px;
+    border-radius: 20px;
+}
 
-.nav-link:hover {
-    color: #e9e9ea;
-    background-color: #501c1a70;
-    border-radius: 50px;
+.navbar-nav {
+    height: 65px;
+    align-items: center;
+    width: 550px;
+    justify-content: space-between;
+}
+
+.marcador:hover {
+    background-color: #501c1a7e;
+    padding: 3px 5px;
+    border-radius: 20px;
+    font-family: ZonaPro-Bold;
+
+}
+
+.enlace-pag:hover {
+    font-family: ZonaPro-Bold;
+}
+
+.marcador-actual:hover {
+    border: 1px solid #9b9b9b;
+    padding: 3px 5px;
+}
+
+.navbar-toggler-icon {
+    background-image: url(../recursos/menu-hamb.png);
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
 }
 
 /*----------MAIN----------*/
@@ -115,7 +105,7 @@
 
 .banner-inicio {
     background-image: url(../recursos/fondo-principal.png);
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
 }
 
@@ -306,7 +296,33 @@
 
 .lista-redes {
     display: flex;
-    height: 35px;
+    min-height: 30px;
     margin: 30px 750px;
     justify-content: space-between;
+}
+
+
+/* ----------MEDIA QUERIS---------- */
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        height: 200px;
+        width: 100vw;
+        justify-content: space-around
+    }
+    
+    .enlace-pag{
+        font-size: 14px;
+    }
+
+    .navbar-brand img {
+        height: 35px;
+    }
+
+    .navbar-toggler-icon {
+        width: 25px;
+    }
+
+   
+    
 }
