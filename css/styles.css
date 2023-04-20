@@ -98,6 +98,9 @@
 
 /*----------MAIN----------*/
 
+.main-index{
+    min-height: 71vh;
+}
 
 .lista-redes {
     list-style: none;
@@ -105,7 +108,7 @@
 
 .banner-inicio {
     background-image: url(../recursos/fondo-principal.png);
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
 }
 
@@ -293,16 +296,24 @@
 
 /* ----------FOOTER---------- */
 
+.footer-index{
+    min-height: 8vh;
+    display: flex;
+}
 
 .lista-redes {
     display: flex;
-    min-height: 30px;
-    margin: 30px 750px;
+    margin: auto;
     justify-content: space-between;
+    width: 250px;
+    height: 100px;
+    padding: 0;
+    align-items: flex-end;
 }
 
 
 /* ----------MEDIA QUERIS---------- */
+
 
 @media (max-width: 991px) {
     .navbar-nav {
@@ -323,6 +334,12 @@
         width: 25px;
     }
 
-   
+    .nombre-negrita{
+        font-size: 40px;
+    }
+
+    .subtitulo{
+        font-size: 25px;
+    }
     
 }
