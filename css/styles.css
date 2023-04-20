@@ -127,19 +127,28 @@
     font-size: 85px;
 }
 
-.botones-index {
-    height: 45px;
-}
 
 .botones-index {
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 50px,
 }
 
-.botones-index a {
-    margin: 30px;
+.btn-sp{
+    margin: 0 120px;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 10px;
+    background-color: #501c1a;
+    color: #e9e9ea;
+    font-size: 20px;
+    box-shadow: 10px #081413;
+}
+
+.texto-negrita{
+    font-family: ZonaPro-Bold;
+    
 }
 
 .main-sobrenosotros {
@@ -297,7 +306,7 @@
 /* ----------FOOTER---------- */
 
 .footer-index{
-    min-height: 8vh;
+    min-height: 20vh;
     display: flex;
 }
 
@@ -306,7 +315,7 @@
     margin: auto;
     justify-content: space-between;
     width: 250px;
-    height: 100px;
+    height: 170px;
     padding: 0;
     align-items: flex-end;
 }
