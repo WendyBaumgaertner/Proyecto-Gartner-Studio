@@ -167,16 +167,24 @@
     min-height: 71vh;
     display: flex;
     flex-direction: column;align-items: flex-start;
+    margin: auto;
 }
 
-.main-sobrenosotros h1 {
+.titulo-quienessomos {
     font-family: ZonaPro-Bold;
     color: #e9e9ea;
     font-size: 40px;
+    margin: 200px 125px 5px 125px;
+    border-left: 5px solid #e9e9ea;
+    padding-left: 20px;
 }
 
-.main-sobrenosotros p {
+.texto-quienessomos {
     color: #e9e9ea;
+    margin: 15px 100px 5px 125px;
+    width: 450px;
+    border-left: 1px solid #e9e9ea;
+    padding-left: 20px;
 }
 
 /* --------------------------------------------------- */
@@ -186,6 +194,7 @@
     color: #e9e9ea;
     font-size: 40px;
     text-align: center;
+
 }
 
 .fondo-proyectos {
@@ -202,6 +211,8 @@
     height: 300px;
     border-radius: 10px;
 }
+
+/* --------------------------------------------------- */
 
 .main-servicios h1 {
     font-family: ZonaPro-Bold;
@@ -232,6 +243,8 @@
 .fondo-servicios {
     background-image: url(../recursos/fondo-servicios.png);
 }
+
+/* --------------------------------------------------- */
 
 .main-contacto h1 {
     font-family: ZonaPro-Bold;
@@ -329,6 +342,9 @@
 
 
 @media (max-width: 991px) {
+
+    /* index */
+
     .navbar-nav {
         height: 200px;
         width: 100vw;
@@ -375,5 +391,22 @@
         padding: 14px 0px;
         font-size: 14px;
         width: 540px;
+    }
+
+    /* Sobre nosotros */
+
+    .titulo-quienessomos{
+        font-size: 30px;
+        margin-top: 90px;
+        margin-left: 60px;
+    }
+
+    .texto-quienessomos{
+        font-size: 14px;
+        width: 340px;
+        margin-left: 60px;
+    }
+    .fondo-sobrenosotros{
+        background-position: 830px;
     }
 }
