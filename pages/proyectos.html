@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Gärtner | Cotiza tu proyecto</title>
     <link rel="shortcut icon" href="../recursos/iconoBlanco.png">
@@ -12,16 +14,24 @@
 
 <body>
     <div class="fondo-proyectos">
-        <header class="encabezado">
-            <a href="../index.html"><img class="logo" src="../recursos/Logo blanco.png" alt="Logo"></a>
-            <nav>
-                <ul class="navegacion">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                    <li><a href="./proyectos.html">Proyectos</a></li>
-                    <li><a href="./servicios.html">Servicios</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+        <header>
+            <nav class="navbar navbar-expand-lg deg-navbar">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img src="../recursos/Marca-de-agua-blanca.png"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span
+                            class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="marcador"><a class="enlace-pag pag-home" href="../index.html">Home</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-sobrenos" href="./sobre-nosotros.html">Sobre nosotros</a></li>
+                            <li class="marcador-actual"><a class="enlace-pag pag-actual" aria-current="page" href="./proyectos.html">Proyectos</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-serv" href="./servicios.html">Servicios</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-cont" href="./contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
         <main class="main-proyectos">
@@ -33,14 +43,20 @@
                 <img src="../recursos/proyecto4.png" alt="Proyecto 4">
             </section>
         </main>
-        <footer class="footer">
+
+        <footer class="footer-index">
             <ul class="lista-redes">
-                <li><img src="../recursos/LogoFB.png" alt="Facebook"></li>
-                <li><img src="../recursos/LogoWP.png" alt="Whatsapp"></li>
-                <li><img src="../recursos/LogoIG.png" alt="Instagram"></li>
+                <li><img class="logos-footer" src="../recursos/LogoFB.png" alt="Facebook"></li>
+                <li><img class="logos-footer" src="../recursos/LogoWP.png" alt="Whatsapp"></li>
+                <li><img class="logos-footer" src="../recursos/LogoIG.png" alt="Instagram"></li>
             </ul>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous">
+    </script>
 
 </body>
 
