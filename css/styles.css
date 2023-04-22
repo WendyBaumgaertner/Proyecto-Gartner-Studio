@@ -108,7 +108,7 @@
 
 .banner-inicio {
     background-image: url(../recursos/fondo-principal.png);
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
 }
 
@@ -143,7 +143,13 @@
     background-color: #501c1a;
     color: #e9e9ea;
     font-size: 20px;
-    box-shadow: 10px #081413;
+    box-shadow: 5px 8px 20px 0px #00000082;
+}
+
+.btn-sp:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 5px 8px 20px 0px #000000b0, inset 0px 0px 11px 3px #e9e9ea17;
 }
 
 .texto-negrita{
@@ -320,6 +326,10 @@
     align-items: flex-end;
 }
 
+.logos-footer {
+    width: 30px;
+    height: 30px;
+}
 
 /* ----------MEDIA QUERIS---------- */
 
@@ -351,4 +361,17 @@
         font-size: 25px;
     }
     
+    .logos-footer {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .botones-index{
+        flex-direction: column;
+        height: 190px;
+    }
+
+    .titulo-principal{
+        height: 170px;
+    }
 }
