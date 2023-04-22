@@ -84,7 +84,7 @@
 }
 
 .marcador-actual:hover {
-    border: 1px solid #9b9b9b;
+    box-shadow: inset 0px 0px 5px 2px #e9e9ea59;
     padding: 3px 5px;
 }
 
@@ -102,14 +102,11 @@
     min-height: 71vh;
 }
 
-.lista-redes {
-    list-style: none;
-}
-
 .banner-inicio {
     background-image: url(../recursos/fondo-principal.png);
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
+    
 }
 
 .titulo-principal {
@@ -129,10 +126,11 @@
 
 
 .botones-index {
-    height: 45px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .btn-sp{
@@ -312,16 +310,17 @@
 /* ----------FOOTER---------- */
 
 .footer-index{
-    min-height: 20vh;
+    min-height: 15vh;
     display: flex;
 }
 
 .lista-redes {
+    list-style: none;
     display: flex;
     margin: auto;
     justify-content: space-between;
     width: 250px;
-    height: 170px;
+    height: 150px;
     padding: 0;
     align-items: flex-end;
 }
@@ -368,10 +367,18 @@
     
     .botones-index{
         flex-direction: column;
-        height: 190px;
+        height: 115px;
+        justify-content: space-between;
     }
 
     .titulo-principal{
         height: 170px;
+    }
+
+    .btn-sp{
+        margin: auto;
+        padding: 14px 0px;
+        font-size: 14px;
+        width: 540px;
     }
 }
