@@ -98,15 +98,15 @@
 
 /*----------MAIN----------*/
 
-.main-index{
-    min-height: 71vh;
-}
-
 .banner-inicio {
     background-image: url(../recursos/fondo-principal.png);
     height: 100vh;
     background-size: cover;
     
+}
+
+.main-index{
+    min-height: 71vh;
 }
 
 .titulo-principal {
@@ -155,10 +155,18 @@
     
 }
 
+/* --------------------------------------------------- */
+
+.fondo-sobrenosotros {
+    background-image: url(../recursos/fondo-sobrenosotros.png);
+    height: 100vh;
+    background-size: cover;
+}
+
 .main-sobrenosotros {
+    min-height: 71vh;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;align-items: flex-start;
 }
 
 .main-sobrenosotros h1 {
@@ -169,22 +177,9 @@
 
 .main-sobrenosotros p {
     color: #e9e9ea;
-    margin: 50px;
-    width: 500px;
-    text-align: center;
-    background-color: #2a4647d3;
-    padding: 50px;
-    border-radius: 5px 50px;
 }
 
-.fondo-sobrenosotros {
-    background-image: url(../recursos/fondo-sobrenos.png);
-    height: 850px;
-}
-
-.botones-sobrenosotros a {
-    padding: 0 30px;
-}
+/* --------------------------------------------------- */
 
 .main-proyectos h1 {
     font-family: ZonaPro-Bold;
