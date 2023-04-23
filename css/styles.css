@@ -31,8 +31,11 @@
     background-image: linear-gradient(#030303c7, #08141300);
 }
 
+.navbar-brand{
+    margin: 0 10px;
+}
 .navbar-brand img {
-    height: 55px;
+    height: 40px;
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -46,7 +49,7 @@
 }
 
 .navbar {
-    min-height: 9vh;
+    min-height: 10vh;
 }
 
 .marcador-actual {
@@ -92,7 +95,7 @@
     background-image: url(../recursos/menu-hamb.png);
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
     box-shadow: none;
 }
 
@@ -102,21 +105,22 @@
     background-image: url(../recursos/fondo-principal.png);
     height: 100vh;
     background-size: cover;
-    
+
 }
 
-.main-index{
-    min-height: 71vh;
+.main-index {
+    min-height: 85vh;
 }
 
 .titulo-principal {
-    height: 350px;
+    height: 650px;
     display: flex;
     text-align: center;
     color: #e9e9ea;
     font-size: 40px;
     flex-direction: column;
-    margin: 250px 0 0 0;
+    margin: auto;
+    justify-content: center;
 }
 
 .nombre-negrita {
@@ -133,7 +137,7 @@
     margin: auto;
 }
 
-.btn-sp{
+.btn-sp {
     margin: 0 120px;
     padding: 20px 50px;
     border: none;
@@ -150,9 +154,9 @@
     box-shadow: 5px 8px 20px 0px #000000b0, inset 0px 0px 11px 3px #e9e9ea17;
 }
 
-.texto-negrita{
+.texto-negrita {
     font-family: ZonaPro-Bold;
-    
+
 }
 
 /* --------------------------------------------------- */
@@ -164,16 +168,17 @@
 }
 
 .main-sobrenosotros {
-    min-height: 71vh;
+    min-height: 85vh;
     display: flex;
-    flex-direction: column;align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
     margin: auto;
 }
 
 .titulo-quienessomos {
     font-family: ZonaPro-Bold;
     color: #e9e9ea;
-    font-size: 40px;
+    font-size: 36px;
     margin: 200px 125px 5px 125px;
     border-left: 5px solid #e9e9ea;
     padding-left: 20px;
@@ -189,28 +194,80 @@
 
 /* --------------------------------------------------- */
 
+.fondo-proyectos {
+    background-image: url(../recursos/fondo-proyectos.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-proyectos {
+    min-height: 85vh;
+}
+
 .main-proyectos h1 {
     font-family: ZonaPro-Bold;
     color: #e9e9ea;
-    font-size: 40px;
-    text-align: center;
-
-}
-
-.fondo-proyectos {
-    background-color: #081413;
+    font-size: 36px;
+    width: 800px;
+    margin: 170px auto 50px auto;
+    border-bottom: 5px solid #e9e9ea;
 }
 
 .img-proyectos {
-    display: flex;
-    justify-content: space-around;
-    margin: 180px 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "proyecto1 proyecto2"
+        "proyecto3 proyecto4"
+    ;
+    width: 800px;
+    height: 800px;
+    grid-gap: 50px;
+    margin: 20px auto;
 }
 
-.img-proyectos img {
-    height: 300px;
+.proyecto{
+    background-position: center;
+    background-size: cover;
     border-radius: 10px;
 }
+
+
+.text-img{
+    color: #e9e9ea;
+    font-size: 20px;
+    
+}
+
+.proyecto:hover{
+    transform: scale(1.1);
+    transition: 1.2s;
+    box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.178);
+    
+}
+
+.proyecto1 {
+    grid-area: proyecto1;
+    background-image: url(../recursos/proyecto1.png);
+}
+
+.proyecto2 {
+    grid-area: proyecto2;
+    background-image: url(../recursos/proyecto2.png);
+}
+
+.proyecto3 {
+    grid-area: proyecto3;
+    background-image: url(../recursos/proyecto3.png);
+}
+
+.proyecto4 {
+    grid-area: proyecto4;
+    background-image: url(../recursos/proyecto4.png);
+}
+
 
 /* --------------------------------------------------- */
 
@@ -317,9 +374,12 @@
 
 /* ----------FOOTER---------- */
 
-.footer-index{
-    min-height: 15vh;
+.footer-index {
+    min-height: 5vh;
     display: flex;
+    bottom:0px;
+    width: auto;
+    border-top: 2px solid #e9e9ea41;
 }
 
 .lista-redes {
@@ -328,7 +388,7 @@
     margin: auto;
     justify-content: space-between;
     width: 250px;
-    height: 150px;
+    height: 30px;
     padding: 0;
     align-items: flex-end;
 }
@@ -350,8 +410,8 @@
         width: 100vw;
         justify-content: space-around
     }
-    
-    .enlace-pag{
+
+    .enlace-pag {
         font-size: 14px;
     }
 
@@ -363,50 +423,49 @@
         width: 25px;
     }
 
-    .nombre-negrita{
+    .nombre-negrita {
         font-size: 40px;
     }
 
-    .subtitulo{
+    .subtitulo {
         font-size: 25px;
     }
-    
+
     .logos-footer {
         width: 25px;
         height: 25px;
     }
-    
-    .botones-index{
+
+    .botones-index {
         flex-direction: column;
         height: 115px;
         justify-content: space-between;
     }
 
-    .titulo-principal{
-        height: 170px;
-    }
 
-    .btn-sp{
+    .btn-sp {
         margin: auto;
         padding: 14px 0px;
         font-size: 14px;
-        width: 540px;
+        width: 380px;
     }
 
     /* Sobre nosotros */
 
-    .titulo-quienessomos{
+    .titulo-quienessomos {
         font-size: 30px;
         margin-top: 90px;
         margin-left: 60px;
     }
 
-    .texto-quienessomos{
+    .texto-quienessomos {
         font-size: 14px;
         width: 340px;
         margin-left: 60px;
+        padding-right: 39px;
     }
-    .fondo-sobrenosotros{
+
+    .fondo-sobrenosotros {
         background-position: 830px;
     }
 }
