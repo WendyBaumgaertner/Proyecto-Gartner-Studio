@@ -25,10 +25,14 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="marcador"><a class="enlace-pag pag-home" href="../index.html">Home</a></li>
-                            <li class="marcador"><a class="enlace-pag pag-sobrenos" href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                            <li class="marcador"><a class="enlace-pag pag-proy" href="./proyectos.html">Proyectos</a></li>
-                            <li class="marcador"><a class="enlace-pag pag-serv" href="./servicios.html">Servicios</a></li>
-                            <li class="marcador-actual"><a class="enlace-pag pag-actual" aria-current="page" href="./contacto.html">Contacto</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-sobrenos" href="./sobre-nosotros.html">Sobre
+                                    nosotros</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-proy" href="./proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="marcador"><a class="enlace-pag pag-serv" href="./servicios.html">Servicios</a>
+                            </li>
+                            <li class="marcador-actual"><a class="enlace-pag pag-actual" aria-current="page"
+                                    href="./contacto.html">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
@@ -36,48 +40,71 @@
         </header>
 
         <main class="main-contacto">
+
             <h1>Cotizá tu proyecto</h1>
-            <div class="fondo-formulario">
-                <p class="contacto-subtitulo">Completá el formulario y recibirás la cotización de tu proyecto</p>
-                <form action="#">
-                    <div class="input-datoscontacto">
-                        <input type="text" placeholder="Nombre" name="Nombre" required>
-                        <input type="email" placeholder="Correo electrónico" name="correoelectronico" required>
-                        <input type="tel" placeholder="11 12345678" name="numerotelefono" pattern="[0-9]{2}[0-9]{8}"
-                            required>
-                    </div>
-                    <!-- Agregar seleccionar la cantidad de cada cosa -->
-                    <p class="contacto-subtitulo2">Selecciona el servicio que deseas</p>
-                    <div class="input-tiposervicio">
-                        <span><input type="checkbox" name="servicio" value="planimetria">Planimetría AutoCAD</span>
-                        <span><input type="checkbox" name="servicio" value="modelado-3d">Modelado 3D Sketchup</span>
-                        <span><input type="checkbox" name="servicio" value="render">Render</span>
-                        <span><input type="checkbox" name="servicio" value="render-360">Render 360°</span>
-                    </div>
-                    <p class="contacto-subtitulo2">¿Tenés imagenes de referencia? Adjuntalas</p>
-                    <input type="file" name="img-referencia">
-                    <p class="contacto-subtitulo2">Agregá una descripción de tu proyecto</p>
-                    <div class="input-final">
-                        <input type="text" placeholder="Descripción" name="descripcion">
-                        <input type="submit" value="Cotizar">
-                    </div>
-            </div>
+
+            <form action="#">
+
+                <!-- inputs -->
+
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
+                    <label for="floatingInput">Nombre completo</label>
+                </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Correo electrónico</label>
+                </div>
+                <div class="form-floating">
+                    <input type="tel" class="form-control" id="floatingPassword" placeholder="telefono">
+                    <label for="floatingPassword">Número de teléfono</label>
+                </div>
+
+                <!-- check list -->
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Default checkbox
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                        Checked checkbox
+                    </label>
+                </div>
+
+                <!-- seleccionar archivo -->
+
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Default file input example</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+
+                <!-- text area -->
+
+                <div class="input-group">
+                    <span class="input-group-text">With textarea</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+
+            </form>
 
             <footer class="footer-index">
-            <ul class="lista-redes">
-                <li><img class="logos-footer" src="../recursos/LogoFB.png" alt="Facebook"></li>
-                <li><img class="logos-footer" src="../recursos/LogoWP.png" alt="Whatsapp"></li>
-                <li><img class="logos-footer" src="../recursos/LogoIG.png" alt="Instagram"></li>
-            </ul>
-        </footer>
+                <ul class="lista-redes">
+                    <li><img class="logos-footer" src="../recursos/LogoFB.png" alt="Facebook"></li>
+                    <li><img class="logos-footer" src="../recursos/LogoWP.png" alt="Whatsapp"></li>
+                    <li><img class="logos-footer" src="../recursos/LogoIG.png" alt="Instagram"></li>
+                </ul>
+            </footer>
 
     </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
 
 </body>
 

@@ -356,6 +356,13 @@
 
 /* --------------------------------------------------- */
 
+.fondo-contacto {
+    background-image: url(../recursos/fondo-contacto.png);
+    min-height: 100vh;
+}
+.main-contacto{
+    min-height: 85vh;
+}
 .main-contacto h1 {
     font-family: ZonaPro-Bold;
     color: #e9e9ea;
@@ -363,65 +370,6 @@
     text-align: center;
     align-items: center;
 }
-
-.fondo-formulario {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px 460px 80px 460px;
-    border-radius: 5px 50px;
-}
-
-.fondo-formulario p {
-    color: #e9e9ea;
-}
-
-.fondo-formulario span {
-    color: #e9e9ea;
-}
-
-.contacto-subtitulo {
-    margin: 30px;
-    font-size: 20px;
-    text-align: center;
-}
-
-.contacto-subtitulo2 {
-    margin: 20px;
-    text-align: center;
-}
-
-.input-datoscontacto {
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-    justify-content: space-around;
-    width: 560px;
-    margin: 0 100px;
-}
-
-.input-tiposervicio {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.input-tiposervicio span {
-    font-size: 16px;
-}
-
-.fondo-contacto {
-    background-image: url(../recursos/fondo-contacto.png);
-}
-
-.input-final {
-    display: flex;
-    flex-direction: column;
-    margin: 5px 100px;
-    height: 100px;
-    justify-content: space-around;
-    width: 560px;
-}
-
 
 
 /* ----------FOOTER---------- */
