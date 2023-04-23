@@ -25,9 +25,12 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="marcador"><a class="enlace-pag pag-home" href="../index.html">Home</a></li>
-                            <li class="marcador"><a class="enlace-pag pag-sobrenos" href="./sobre-nosotros.html">Sobre nosotros</a></li>
-                            <li class="marcador"><a class="enlace-pag pag-proy" href="./proyectos.html">Proyectos</a></li>
-                            <li class="marcador-actual"><a class="enlace-pag pag-actual" aria-current="page" href="./servicios.html">Servicios</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-sobrenos" href="./sobre-nosotros.html">Sobre
+                                    nosotros</a></li>
+                            <li class="marcador"><a class="enlace-pag pag-proy" href="./proyectos.html">Proyectos</a>
+                            </li>
+                            <li class="marcador-actual"><a class="enlace-pag pag-actual" aria-current="page"
+                                    href="./servicios.html">Servicios</a></li>
                             <li class="marcador"><a class="enlace-pag pag-cont" href="./contacto.html">Contacto</a></li>
                         </ul>
                     </div>
@@ -36,22 +39,93 @@
         </header>
 
         <main class="main-servicios">
+
             <h1>Nuestros servicios</h1>
-            <!-- ver de hacer un boton con foto/icono para cada servicio -->
-            <section class="tipo-servicios">
-                <div><img src="../recursos/plano-arq.jpg" alt="planimetrías">
-                    <h3>Planimetrías</h3>
+
+            <div class="accordion ancho-ac" id="accordionExample">
+
+                <!-- collapse 1 -->
+
+                <div class="accordion-item">
+                    <h2 id="servicio1">
+                        <button class="btn-servicio" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <div class="img-serv">
+                                <img src="../recursos/icono-3d.png" alt="icono3d">
+                                <p>Modelados 3D</p>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body texto-servicio">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, ex?
+                        </div>
+                    </div>
                 </div>
-                <div><img src="../recursos/Cocina2.jpg" alt="modelados3d">
-                    <h3>Modelados 3D</h3>
+
+                <!-- collapse 2 -->
+
+                <div class="accordion-item">
+                    <h2 id="servicio1">
+                        <button class="btn-servicio" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <div class="img-serv">
+                                <img src="../recursos/icono-planos.png" alt="iconoplanos">
+                                <p>Planos</p>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body texto-servicio">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, ex?
+                        </div>
+                    </div>
                 </div>
-                <div><img src="../recursos/proyecto2.png" alt="renders">
-                    <h3>Renders de interior y exterior</h3>
+
+                <!-- collapse 3 -->
+
+                <div class="accordion-item">
+                    <h2 id="servicio1">
+                        <button class="btn-servicio" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <div class="img-serv">
+                                <img src="../recursos/icono render.png" alt="iconorender">
+                                <p>Renders</p>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body texto-servicio">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, ex?
+                        </div>
+                    </div>
                 </div>
-                <div><img src="../recursos/render360.jpg" alt="renders360">
-                    <h3>Renders 360</h3>
+
+                <!-- collapse 5 -->
+
+                <div class="accordion-item">
+                    <h2 id="servicio1">
+                        <button class="btn-servicio" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#servicio360" aria-expanded="false" aria-controls="servicio360">
+                            <div class="img-serv">
+                                <img src="../recursos/icono-360.png" alt="iconorender">
+                                <p>Renders 360°</p>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="servicio360" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body texto-servicio">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, ex?
+                        </div>
+                    </div>
                 </div>
-            </section>
+
+            </div>
+
         </main>
 
         <footer class="footer-index">
@@ -64,9 +138,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>
