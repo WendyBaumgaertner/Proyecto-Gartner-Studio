@@ -43,65 +43,71 @@
 
             <h1>Cotizá tu proyecto</h1>
 
-            <form action="#">
+            <form class="form-general" action="#">
 
                 <!-- inputs -->
+                <section class="input-completar">
+                    <div class="form-floating">
+                        <input type="text" class="form-control fondo-input" id="floatingInput" placeholder="Nombre">
+                        <label class="texto-input" for="floatingInput">Nombre completo</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Correo electrónico</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="tel" class="form-control" id="floatingPassword" placeholder="telefono">
+                        <label for="floatingPassword">Número de teléfono</label>
+                    </div>
+                </section>
 
-                <div class="form-floating">
-                    <input type="text" class="form-control" id="floatingInput" placeholder="Nombre">
-                    <label for="floatingInput">Nombre completo</label>
-                </div>
-                <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Correo electrónico</label>
-                </div>
-                <div class="form-floating">
-                    <input type="tel" class="form-control" id="floatingPassword" placeholder="telefono">
-                    <label for="floatingPassword">Número de teléfono</label>
-                </div>
 
                 <!-- check list -->
+                <section class="input-seleccionar">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Default checkbox
+                        </label>
+                    </div>
 
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Default checkbox
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                    <label class="form-check-label" for="flexCheckChecked">
-                        Checked checkbox
-                    </label>
-                </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Checked checkbox
+                        </label>
+                    </div>
+                </section>
 
-                <!-- seleccionar archivo -->
+                <section class="input-selectarea">
+                    <!-- seleccionar archivo -->
 
-                <div class="mb-3">
-                    <label for="formFile" class="form-label">Default file input example</label>
-                    <input class="form-control" type="file" id="formFile">
-                </div>
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label">Default file input example</label>
+                        <input class="form-control" type="file" id="formFile">
+                    </div>
 
-                <!-- text area -->
+                    <!-- text area -->
 
-                <div class="input-group">
-                    <span class="input-group-text">With textarea</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                </div>
+                    <div class="input-group">
+
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                </section>
+
 
             </form>
 
-            <footer class="footer-index">
-                <ul class="lista-redes">
-                    <li><img class="logos-footer" src="../recursos/LogoFB.png" alt="Facebook"></li>
-                    <li><img class="logos-footer" src="../recursos/LogoWP.png" alt="Whatsapp"></li>
-                    <li><img class="logos-footer" src="../recursos/LogoIG.png" alt="Instagram"></li>
-                </ul>
-            </footer>
+        </main>
 
+        <footer class="footer-index">
+            <ul class="lista-redes">
+                <li><img class="logos-footer" src="../recursos/LogoFB.png" alt="Facebook"></li>
+                <li><img class="logos-footer" src="../recursos/LogoWP.png" alt="Whatsapp"></li>
+                <li><img class="logos-footer" src="../recursos/LogoIG.png" alt="Instagram"></li>
+            </ul>
+        </footer>
     </div>
-    </main>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
         </script>

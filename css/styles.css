@@ -368,7 +368,37 @@
     color: #e9e9ea;
     font-size: 36px;
     text-align: center;
-    align-items: center;
+}
+
+.form-general{
+    display: flex;
+    height: 650px;
+    flex-direction: column;
+    width: 600px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.input-completar{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+}
+
+.fondo-input{
+    background-color: #e9e9ea33;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.form-control:focus{
+    background-color: #2020c562 !important;
+}
+
+.texto-input{
+    color: #e9e9ea;
 }
 
 
