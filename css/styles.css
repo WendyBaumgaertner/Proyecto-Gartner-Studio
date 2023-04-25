@@ -366,40 +366,122 @@
 .main-contacto h1 {
     font-family: ZonaPro-Bold;
     color: #e9e9ea;
-    font-size: 36px;
-    text-align: center;
+    font-size: 24px;
+    width: 600px;
+    margin: auto;
+    border-left: 5px solid #e9e9ea;
+    padding-left: 20px;
 }
 
-.form-general{
+.form-general {
     display: flex;
     height: 650px;
     flex-direction: column;
     width: 600px;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.input-completar{
+.input-completar {
     display: flex;
     flex-direction: column;
     height: 200px;
     justify-content: space-between;
 }
 
-.fondo-input{
+.fondo-input {
     background-color: #e9e9ea33;
     border: none;
     border-radius: 5px;
-    height: 40px;
 }
 
-.form-control:focus{
-    background-color: #2020c562 !important;
+.form-control:focus {
+    background-color: #e9e9eaa6;
+    border: 2px solid #3c2b42;
+    outline: 0;
+    box-shadow: 4px 4px 10px 1px #0814133d;
 }
 
 .texto-input{
     color: #e9e9ea;
 }
+
+
+.check-servicios {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.check-serv{
+    display: flex;
+    background-color: #e9e9ea33;
+    border-radius: 5px;
+    flex-direction: column;
+    
+}
+
+.label-serv{
+    text-align: center;
+    margin: auto;
+    width: 120px;
+    
+}
+
+.inp-serv{
+    width: 15px;
+    height: 15px;
+    margin: 4px 0 0 4px;
+    border: none;
+    border-radius: 5px;
+    accent-color: #501c1a;
+}
+
+
+.label-serv p{
+    color: #e9e9ea;
+    margin: auto;
+    font-size: 14px;
+}
+
+
+
+.label-serv img{
+    width: 60px;
+    height: 60px;
+} 
+
+.sub-form {
+    font-size: 16px;
+    color: #e9e9ea;
+    margin-bottom: 8px;
+}
+
+.sel-arch {
+    background-color: #e9e9ea;
+}
+
+.tx-area{
+    background-color: #e9e9ea;
+    border-radius: 5px;
+}
+
+.btn-submit{
+    background-color: #501c1a;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    color: #e9e9ea;
+    box-shadow: 1px 2px 6px 1px #08141377;
+    
+}
+
+.btn-submit:hover{
+    transform: scale(1.05);
+    border: 1px solid #e9e9ea98;
+    transition: 1s;
+}
+
 
 
 /* ----------FOOTER---------- */
