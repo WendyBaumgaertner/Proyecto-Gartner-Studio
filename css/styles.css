@@ -31,8 +31,10 @@
     background-image: linear-gradient(#030303c7, #08141300);
 }
 
+
+
 .navbar-brand{
-    margin: 0 10px;
+    margin: 10px 0 10px 0px;
 }
 .navbar-brand img {
     height: 40px;
@@ -362,6 +364,8 @@
 }
 .main-contacto{
     min-height: 85vh;
+    display: flex;
+    flex-direction: column;
 }
 .main-contacto h1 {
     font-family: ZonaPro-Bold;
@@ -379,7 +383,7 @@
     flex-direction: column;
     width: 600px;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .input-completar {
@@ -458,12 +462,14 @@
 }
 
 .sel-arch {
-    background-color: #e9e9ea;
+    background-color: #e9e9ea33;
+    border: none;
 }
 
 .tx-area{
-    background-color: #e9e9ea;
+    background-color: #e9e9ea33;
     border-radius: 5px;
+    border: none;
 }
 
 .btn-submit{
@@ -477,7 +483,7 @@
 }
 
 .btn-submit:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     border: 1px solid #e9e9ea98;
     transition: 1s;
 }
@@ -517,10 +523,15 @@
 
     /* index */
 
+    .deg-navbar{
+        margin: auto;
+    }
+
     .navbar-nav {
         height: 200px;
         width: 100vw;
-        justify-content: space-around
+        justify-content: space-around;
+        
     }
 
     .enlace-pag {
